@@ -21,7 +21,7 @@ Deployment link:
 ## Credits
 Anthony Lanier  
 Jayce Hampton  
-Joshua Myers @myersjos976 
+Joshua Myers @myersjos976  
 Luc Russell @Luceatscode
 
 ## License
