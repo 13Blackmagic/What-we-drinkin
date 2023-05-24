@@ -22,7 +22,7 @@ Deployment link:
 Anthony Lanier  
 Jayce Hampton  
 Joshua Myers  
-Luc Russell
+Luc Russell @Luceatscode
 
 ## License
 Unlicensed and for public use.
