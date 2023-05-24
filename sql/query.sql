@@ -1,4 +1,4 @@
-SELECT liquor.name, liquor.price, liquor.volume, liquor.type, liquor.description = 1
+SELECT liquor.liquor_name AS liquor, liquor.liquor_price AS price, liquor.liquor_volume AS volume, liquor.liquor_type AS type
 FROM liquor INNER JOIN name ON liquor.name_id = name.id
 LEFT JOIN liquor ON brand.id = liquor.brand_id
 ON brand.id = liquor.brand_id
