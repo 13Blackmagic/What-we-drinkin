@@ -4,7 +4,19 @@
       &#127869 Current Menu
     </h2>
   </div>
-    <div>
+  {{#each liquor as |liquor|}}
+    <div class='liquor-card'>
+        <div class='liquor-card-header'>
+            {{liquor.liquor_name}}
+        </div>
+        <div class='card-body'>
+            <div class='liquor-card-text'>
+                <p>Price: ${{liquor.liquor_price}}</p>
+                <p>Size: {{liquor.liquor_size}}</p>
+                <p>Quantity: {{liquor.liquor_quantity}}</p>
+            </div>
+        </div>
+    </div>
       <ol>
         <li>
           Vodka
