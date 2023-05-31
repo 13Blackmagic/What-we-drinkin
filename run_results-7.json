@@ -1,0 +1,50 @@
+{
+ "whiskey": [
+  {
+    "name": "Jack Daniels",
+    "price": 20.99,
+    "store": 20
+
+      },
+      {
+    "name": "Jameson",
+    "price": 15,
+    "store": 82
+      },
+      {
+    "name": "Jim Beam",
+    "price": 10,
+    "store": 82
+      },
+      {
+    "name": "Crown Royal",
+    "price": 20,
+    "store": 64
+      },
+      {
+    "name": "Makers Mark",
+    "price": 20,
+    "store": 89
+      },
+      {
+    "name": "Bulleit",
+    "price": 20,
+    "store": 28
+        },
+        {
+    "name": "Wild Turkey",
+    "price": 20,
+    "store": 64
+        },
+        {
+    "name": "Evan Williams",
+    "price": 20,
+    "store": 72
+        },
+        {
+    "name": "Seagrams 7",
+    "price": 20,
+    "store": 72
+        }
+    ]
+}
