@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.7",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.3.2",
+    "sequelize": "^6.31.1",
+    "until": "^0.1.1"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "what-we-drinkin",
+  "description": "## Description A website that provides the user with location information about finding liquor.",
+  "version": "1.0.0",
+  "main": "node.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
