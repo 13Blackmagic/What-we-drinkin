@@ -26,3 +26,7 @@ const productTagData = [
         tag_id: 6,
     },
 ];
+
+const seedProductTags = () => ProductTag.bulkCreate(productTagData);
+
+module.exports = seedProductTags;
