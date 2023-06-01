@@ -1,11 +1,11 @@
-INSERT INTO liquor (liquor_name)
-VALUES ('Jack Daniels', true),
+INSERT INTO liquor (name,price,volume,type,description)
+VALUES ('Jack Daniels',15, ),
         ('Jameson', true),
-        ('Crown Royal', true),
+        ('Crown Royal',),
         ('Bulleit', true),
-        ('Maker''s Mark', true),
-        ('Jim Beam', true),
-        ('Wild Turkey', true),
-        ('Evan Williams', true),
-        ('Seagrams 7', true);
+        ('Maker''s Mark', ),
+        ('Jim Beam', ),
+        ('Wild Turkey',),
+        ('Evan Williams',),
+        ('Seagrams 7', );
        
