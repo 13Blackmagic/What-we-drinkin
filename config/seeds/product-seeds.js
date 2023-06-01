@@ -99,3 +99,32 @@ const productData = [
         category_id: 4,
         brand_id: 14,
     },
+    {
+        product_name: 'Ketel One',
+        price: 20.00,
+        stock: 10,
+        category_id: 5,
+        brand_id: 15,
+    },
+    {
+        product_name: 'Baileys',
+        price: 20.00,
+        stock: 10,
+        category_id: 6,
+        brand_id: 16,
+    },
+    {
+        product_name: 'Johnnie Walker',
+        price: 20.00,
+        stock: 10,
+        category_id: 1,
+        brand_id: 17,
+    },
+    {
+        product_name: 'Smirnoff',
+        price: 20.00,
+        stock: 10,
+        category_id: 2,
+        brand_id: 18,
+    },
+    
