@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Liquor, Brand} = require('../models');
+const {Liquor, Brand} = require('../config/seeds');
 router.get('/', async (req, res) => {
 console.log('home-routes.js');
 
