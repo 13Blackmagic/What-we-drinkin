@@ -29,4 +29,18 @@ const productData = [
         category_id: 4,
         brand_id: 4,
     },
-    
+    {
+        product_name: 'Tanqueray',
+        price: 20.00,
+        stock: 10,
+        category_id: 5,
+        brand_id: 5,
+    },
+    {
+        product_name: 'Hennessy',
+        price: 20.00,
+        stock: 10,
+        category_id: 6,
+        brand_id: 6,
+    },
+];
