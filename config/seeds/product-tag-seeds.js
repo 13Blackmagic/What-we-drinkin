@@ -1,4 +1,4 @@
-const {PrpdictTag} = require('../models');
+const {PrpdictTag} = require('.');
 
 const productTagData = [
     {
