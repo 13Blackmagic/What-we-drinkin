@@ -2,17 +2,17 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our Location model
-class Liquor extends Model {}
+class Product extends Model {}
 
 // create fields/columns for Location model
 Product.init(
   {
-    // id: {
-    //   type: DataTypes.INTEGER,
-    //   allowNull: false,
-    //   primaryKey: true,
-    //   autoIncrement: true
-    // }
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
     product_name: {
         type: DataTypes.STRING,
         allowNull: false
@@ -26,8 +26,12 @@ Product.init(
         allowNull: false
       },
     category_id: {
-        type: DataTypes.DECIMAL,
-        allowNull: false
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references:{
+            model:'category',
+            key: 'id'
+        },      
       },
     brand_id: {
         type: DataTypes.INTEGER,
