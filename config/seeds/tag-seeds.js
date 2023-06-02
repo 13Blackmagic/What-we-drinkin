@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-const {Tag} = require(..models);
-=======
 // const {Tag} = require('../models');
->>>>>>> c765014e56a904a7ddc17ac38bc30163d0999c51
 
 // const tagData = [
 //     {
