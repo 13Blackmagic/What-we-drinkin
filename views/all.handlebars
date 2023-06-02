@@ -4,16 +4,16 @@
       &#127869 Current Menu
     </h2>
   </div>
-  {{#each liquor as |liquor|}}
+  {{#each liqors }}
     <div class='liquor-card'>
         <div class='liquor-card-header'>
-            {{liquor.liquor_name}}
+            {{name}}
         </div>
         <div class='card-body'>
             <div class='liquor-card-text'>
-                <p>Price: ${{liquor.liquor_price}}</p>
-                <p>Size: {{liquor.liquor_size}}</p>
-                <p>Quantity: {{liquor.liquor_quantity}}</p>
+                <p>Price: ${{price}}</p>
+                <p>Size: {{volume}}</p>
+                {{!-- <p>Quantity: {{liquor.liquor_quantity}}</p> --}}
             </div>
         </div>
     </div>
