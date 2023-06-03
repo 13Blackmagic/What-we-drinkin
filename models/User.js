@@ -1,12 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-// const Category = require('./Category');
 
 // create our Location model
-class Category extends Model {}
+class User extends Model {}
 
 // create fields/columns for Location model
-Category.init(
+User.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -14,18 +13,22 @@ Category.init(
       primaryKey: true,
       autoIncrement: true
     },
-    category_name: {
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    password: {
         type: DataTypes.STRING,
         allowNull: false
       },
-    },
+  },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'category'
-  },
+    modelName: 'User'
+  }
 );
 
-module.exports = Category;
+module.exports = User;
