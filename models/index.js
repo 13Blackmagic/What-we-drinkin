@@ -1,38 +1,45 @@
+// import models
 const Brand = require('./Brand');
 const Category = require('./Category');
 const Liquor = require('./Liquor');
+const Product = require('./Product');
 const User = require('./User');
-const Review = require('./Review');
-const Comment = require('./Comment');
+
+
+// Products belongsTo Category
+
+// Brand.hasMany(Liquor, { foreignKey: 'brand_id'
+// });
+
+// Category.hasMany(Liquor, { foreignKey: 'brand_id'
+// });
+
+// Liquor.belongsTo(Brand, { foreignKey: 'brand_id'
+// });
+
+// Product.hasMany(Review)(Brand, { foreignKey: 'brand_id'
+// });
 
 Brand.hasMany(Liquor, {
     foreignKey: 'brand_id'
 });
-
 Liquor.belongsTo(Brand, {
     foreignKey: 'brand_id'
 });
-
 Category.hasMany(Liquor, {
     foreignKey: 'category_id'
 });
-
 Liquor.belongsTo(Category, {
     foreignKey: 'category_id'
 });
-
-product.hasMany(Review, {
+Product.hasMany(Liquor, {
     foreignKey: 'product_id'
 });
 
-Review.belongsTo(product, {
-    foreignKey: 'product_id'
-});
-
-User.hasMany(Review, {
-    foreignKey: 'user_id'
-});
-
-Review.belongsTo(User, {
-    foreignKey: 'user_id'
-});
+module.exports = {
+  Brand,
+  Category,
+  Liquor,
+  Product,
+  User,
+};
