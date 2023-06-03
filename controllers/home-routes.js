@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Liquor, Brand} = require('../models');
+const {Liquor, Brand, Product} = require('../models');
 router.get('/', async (req, res) => {
 console.log('home-routes.js');
 
@@ -18,11 +18,20 @@ console.log('home-routes.js');
             } 
         ]
     })
-    .then(dbLiqorData => {
-        const liqors = dbLiqorData.map(liqor => liqor.get({ plain: true }));    
-        res.render('all', {liqors} );
+    .then(dbLiquorData => {
+        console.log(dbLiquorData)
+        const liquors = dbLiquorData.map(liquor => liquor.get({ plain: true }));
+        console.log(liquors)    
+        res.render('all', {liquors} );
 
     });
 });
+
+router.get('/hello', async (req, res) => {
+    console.log('home-routes.js');
+    res.send('hello moto')
+});    
+
+
 
 module.exports = router;
