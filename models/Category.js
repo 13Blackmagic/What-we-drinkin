@@ -4,10 +4,10 @@ const Category = require('./Category');
 // const Category = require('./Category');
 
 // create our Location model
-class Category extends Model {}
+  class Category extends Model {}
 
 // create fields/columns for Location model
-Category.init(
+  Category.init(
   {
     id: {
       type: DataTypes.INTEGER,
