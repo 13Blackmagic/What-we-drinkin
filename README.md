@@ -1,7 +1,11 @@
 # What-We-Drinkin
 
 ## Description
-A website that provides the user with location information about finding liquor.
+A website to help customers find out what they want to drink and give them options for what they like.
+
+- We wanted to create a way to help people find diffrent kids of liquor that they havent tried.
+
+-
 
 ## Screenshot
 
