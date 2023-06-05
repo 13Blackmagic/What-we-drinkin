@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-let sequelize;
+let sequelize; // variable to hold connection
 console.log('hello moto')
 console.log(process.env.JAWSDB_URL)
 if (process.env.JAWSDB_URL) {
