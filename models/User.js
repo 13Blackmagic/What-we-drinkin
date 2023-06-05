@@ -1,5 +1,12 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+btn = document.getElementById('btn');
+btn.addEventListener('click', function(){
+    console.log('hello moto')
+})
+
+localStorage.setItem('username',User.email)
+localStorage.setItem('password',User.password)
 
 // create our Location model
 class User extends Model {}
@@ -29,6 +36,9 @@ User.init(
     underscored: true,
     modelName: 'User'
   }
+local
+ 
+ 
 );
 
 module.exports = User;
