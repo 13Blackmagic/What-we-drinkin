@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Liquor, Brand, Product} = require('../models');
+const {Liquor, Brand, Product} = require('../../models');
 router.get('/', async (req, res) => {
 console.log('home-routes.js');
 
