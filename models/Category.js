@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
-const Category = require('./Category');
+// const Category = require('./Category');
 // const Category = require('./Category');
 
 // create our Location model
