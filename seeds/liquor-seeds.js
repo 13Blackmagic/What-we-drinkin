@@ -1,11 +1,12 @@
 const {Liquor} = require('../models'); 
+let showProducts = document.querySelector('#showProducts');
 
-let AlcoholBtn1 = document.querySelector('#alcoholBtn1');
-let AlcoholBtn2 = document.querySelector('#alcoholBtn2');
-let AlcoholBtn3 = document.querySelector('#alcoholBtn3');
-let AlcoholBtn4 = document.querySelector('#alcoholBtn4');
-let AlcoholBtn5 = document.querySelector('#alcoholBtn5');
-let AlcoholBtn6 = document.querySelector('#alcoholBtn6');
+let AlcoholBtn1 = document.querySelector('#AlcoholBtn1');
+let AlcoholBtn2 = document.querySelector('#AlcoholBtn2');
+let AlcoholBtn3 = document.querySelector('#AlcoholBtn3');
+let AlcoholBtn4 = document.querySelector('#AlcoholBtn4');
+let AlcoholBtn5 = document.querySelector('#AlcoholBtn5');
+let AlcoholBtn6 = document.querySelector('#AlcoholBtn6');
 
 AlcoholBtn1.addEventListener('click', function(){
     console.log('hello moto')
