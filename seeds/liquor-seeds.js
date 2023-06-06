@@ -1,4 +1,4 @@
-const {Liquor} = require('../models'); 
+const {Liquor} = require('../seeds/category-seeds/models'); 
 let showProducts = document.querySelector('#showProducts');
 
 let AlcoholBtn1 = document.querySelector('#AlcoholBtn1');
