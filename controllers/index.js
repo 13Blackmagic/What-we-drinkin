@@ -9,8 +9,8 @@ router.use('/auth', userRoutes);
 
 module.exports = router;
 
-localStorage.setItem('username',User.email)
-localStorage.setItem('password',User.password)
+// localStorage.setItem('username',User.email)
+// localStorage.setItem('password',User.password)
 
 
 
