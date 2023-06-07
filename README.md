@@ -12,6 +12,7 @@ A website to help customers find out what they want to drink and give them optio
 - We learned a lot together because we couldnt figure out how to put a table together or catagorize these diffrent kinds of liquor.
 
 ## Screenshot
+![image](https://github.com/13Blackmagic/What-we-drinkin/assets/122832005/72895483-cdfb-47fa-8293-fdf35ebb3524)
 
 
 ## Table of Contents
