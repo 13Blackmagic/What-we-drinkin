@@ -19,6 +19,7 @@ const sequelize = require('../config/connection');
         type: DataTypes.STRING,
         allowNull: false
       },
+      
     },
   {
     sequelize,

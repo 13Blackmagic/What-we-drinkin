@@ -11,37 +11,53 @@ let AlcoholBtn6 = document.querySelector('#AlcoholBtn6');
 
 
 AlcoholBtn1.addEventListener('click', function(){
-    console.log('hello moto')
-    Liquor.findAll({
-        where: {
-            category_id: 1
+    console.log('hello moto');
+    
+     fetch(`/home/category/1`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
         }
-    })
-    .then((liquorData) => {
-        console.log(liquorData)
-        for (let i = 0; i < liquorData.length; i++) {
-            let liquorName = document.createElement('p');
-            liquorName.textContent = liquorData[i].product_name;
-            let liquorPrice = document.createElement('p');
-            liquorPrice.textContent = liquorData[i].price;
-            let liquorStock = document.createElement('p');
-            liquorStock.textContent = liquorData[i].stock;
-            let liquorCategory = document.createElement('p');
-            liquorCategory.textContent = liquorData[i].category_id;
-            let liquorBrand = document.createElement('p');
-            liquorBrand.textContent = liquorData[i].brand_id;
-            let liquorDiv = document.createElement('div');
-            liquorDiv.appendChild(liquorName);
-            liquorDiv.appendChild(liquorPrice);
-            liquorDiv.appendChild(liquorStock);
-            liquorDiv.appendChild(liquorCategory);
-            liquorDiv.appendChild(liquorBrand);
-            document.body.appendChild(liquorDiv);
-        }
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+      }).then(response => {
+        if (response.ok) { 
+            console.log(response)
+            response.json().then(data => {
+                console.log(data);  
+            });
+        } 
+    
+    });
+    
+    // Liquor.({
+    //     where: {
+    //         category_id: 1
+    //     }
+    // })
+//     .then((liquorData) => {
+//         console.log(liquorData)
+//         for (let i = 0; i < liquorData.length; i++) {
+//             let liquorName = document.createElement('p');
+//             liquorName.textContent = liquorData[i].product_name;
+//             let liquorPrice = document.createElement('p');
+//             liquorPrice.textContent = liquorData[i].price;
+//             let liquorStock = document.createElement('p');
+//             liquorStock.textContent = liquorData[i].stock;
+//             let liquorCategory = document.createElement('p');
+//             liquorCategory.textContent = liquorData[i].category_id;
+//             let liquorBrand = document.createElement('p');
+//             liquorBrand.textContent = liquorData[i].brand_id;
+//             let liquorDiv = document.createElement('div');
+//             liquorDiv.appendChild(liquorName);
+//             liquorDiv.appendChild(liquorPrice);
+//             liquorDiv.appendChild(liquorStock);
+//             liquorDiv.appendChild(liquorCategory);
+//             liquorDiv.appendChild(liquorBrand);
+//             document.body.appendChild(liquorDiv);
+//         }
+//     })
+//     .catch((err) => {
+//         console.log(err)
+//     })
 })
 
 AlcoholBtn2.addEventListener('click', function(){
