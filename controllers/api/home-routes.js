@@ -32,6 +32,36 @@ router.get('/hello', async (req, res) => {
     res.send('hello moto')
 });    
 
-
+router.get('/category/id', async (req, res) => {
+    console.log('home-routes.js - category get By Id');
+    
+        Category.findByPk(req.params.id,{
+            attributes: [
+                'category_id',
+                'category_name' 
+                         ],  
+            include: [  
+                {
+                    model: Liquor,
+                    attributes: [
+                        'name',
+                        'price',
+                        'stock',
+                        'price',
+                        'type',
+                        'description',
+                        ]  
+                } 
+            ]
+        })
+        .then(dbCategoryData => {
+            console.log(dbCategpruData)
+            const liquors = dbLiquorData.map(liquor => liquor.get({ plain: true }));
+            console.log(liquors)    
+            res.render('all', {liquors} );
+    
+        });
+    });
+    
 
 module.exports = router;
